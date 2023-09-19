@@ -1,26 +1,25 @@
-package xyz.refinedev.phoenix.handler;
+package xyz.refinedev.phoenix.profile.filter;
 
 import org.bukkit.plugin.IllegalPluginAccessException;
-import xyz.refinedev.phoenix.profile.filter.Filter;
 
-public class FilterHandler {
-    public Filter getFilterFromMessage(String message) {
+public class Filter {
+    public String getName() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public void updateFilter(Filter filter) {
+    public String getFilter() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public void removeFilter(Filter filter) {
+    public FilterType getFilterType() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public Filter getFilterByName(String word) {
+    public boolean isHard() {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 
-    public boolean isFiltered(String message) {
+    public void setHard(boolean hard) {
         throw new IllegalPluginAccessException("You need to install the plugin.");
     }
 }

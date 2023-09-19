@@ -17,6 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SharedAPI {
+
     @Getter
     public static SharedAPI instance;
     private Gson gson;
@@ -29,6 +30,7 @@ public class SharedAPI {
     private ChatSnapshotHandler chatSnapshotHandler;
     private MetadataHandler metadataHandler;
     private RebootHandler rebootHandler;
+    private WhitelistHandler whitelistHandler;
     private FilterHandler filterHandler;
 
     private long startedAt;
